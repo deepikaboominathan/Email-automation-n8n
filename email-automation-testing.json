@@ -1,0 +1,136 @@
+{
+  "name": "email automation testing",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1456,
+        256
+      ],
+      "id": "363d4380-66b2-41cc-8f9b-c787af9727bc",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "fromEmail": "=deepikaboominathan81@gmail.com",
+        "toEmail": "={{$json.to}}",
+        "subject": "My Portfolio | Deepika – AI/ML & Full-Stack Developer",
+        "html": "=```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Deepika Boominathan | Developer Portfolio</title>\n</head>\n\n<body style=\"margin:0;padding:0;background:#f4f6fb;font-family:Arial,Helvetica,sans-serif;\">\n\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"#f4f6fb\">\n<tr>\n<td align=\"center\" style=\"padding:16px 8px;\">\n\n<!-- MAIN CARD -->\n<table width=\"640\" cellpadding=\"0\" cellspacing=\"0\"\nstyle=\"max-width:640px;background:#ffffff;border-radius:16px;overflow:hidden;\">\n\n<!-- HERO -->\n<tr>\n<td style=\"background:#0b1220;padding:24px 22px;\">\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">\n<tr>\n<td valign=\"middle\">\n<div style=\"font-size:11px;letter-spacing:0.18em;font-weight:700;color:#a78bfa;margin-bottom:8px;\">\nAI/ML · FULL-STACK DEVELOPMENT\n</div>\n\n<h1 style=\"margin:0 0 10px;font-size:27px;line-height:1.3;font-weight:800;color:#ffffff;\">\nHi, I'm Deepika Boominathan 👋\n</h1>\n\n<p style=\"margin:0;font-size:15px;line-height:1.7;color:#cbd5f5;\">\nI build intelligent applications, AI-powered solutions, automation workflows, and modern web experiences.\n</p>\n</td>\n</tr>\n</table>\n</td>\n</tr>\n\n<!-- BODY -->\n<tr>\n<td style=\"padding:24px;font-size:15px;line-height:1.75;color:#1f2937;\">\n\n<p style=\"margin:0 0 14px;\">\n<strong>Dear {{ $json.Name || 'Hiring Manager' }},</strong>\n</p>\n\n<p style=\"margin:0 0 14px;\">\nI'm an <strong>AI/ML and Full-Stack Developer</strong> from Coimbatore, passionate about building practical technology solutions that solve real-world problems.\n</p>\n\n<p style=\"margin:0 0 14px;\">\nMy experience includes developing web applications, integrating AI-powered chatbots, building Retrieval-Augmented Generation (RAG) systems, and automating repetitive business processes. I enjoy taking an idea from concept to a working application.\n</p>\n\n<p style=\"margin:0 0 10px;\">\n<strong>🚀 A few projects from my portfolio</strong>\n</p>\n\n<!-- PROJECT 1 -->\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"\nstyle=\"margin:12px 0;background:#f8f7ff;border-radius:12px;\">\n<tr>\n<td style=\"padding:16px;\">\n<h3 style=\"margin:0 0 6px;font-size:17px;color:#5b21b6;\">\n🤖 RAG Knowledge Chatbot\n</h3>\n<p style=\"margin:0;font-size:14px;line-height:1.7;color:#374151;\">\nAn AI-powered knowledge assistant that retrieves relevant information from documents and generates contextual answers using retrieval and language models.\n</p>\n</td>\n</tr>\n</table>\n\n<!-- PROJECT 2 -->\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"\nstyle=\"margin:12px 0;background:#f0f9ff;border-radius:12px;\">\n<tr>\n<td style=\"padding:16px;\">\n<h3 style=\"margin:0 0 6px;font-size:17px;color:#0369a1;\">\n⚙️ Business Process Automation\n</h3>\n<p style=\"margin:0;font-size:14px;line-height:1.7;color:#374151;\">\nAutomation workflows for social media and email-related tasks, helping reduce repetitive manual work and improve operational efficiency using Python and automation tools.\n</p>\n</td>\n</tr>\n</table>\n\n<!-- PROJECT 3 -->\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"\nstyle=\"margin:12px 0;background:#f0fdf4;border-radius:12px;\">\n<tr>\n<td style=\"padding:16px;\">\n<h3 style=\"margin:0 0 6px;font-size:17px;color:#166534;\">\n🎬 Movie Recommendation System\n</h3>\n<p style=\"margin:0;font-size:14px;line-height:1.7;color:#374151;\">\nA recommendation application using machine learning techniques, including TF-IDF and cosine similarity, to suggest movies based on content similarity.\n</p>\n</td>\n</tr>\n</table>\n\n<!-- SKILLS -->\n<p style=\"margin:20px 0 10px;\">\n<strong>🛠️ Technologies I work with</strong>\n</p>\n\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">\n<tr>\n<td style=\"padding:10px;background:#f3f4f6;border-radius:8px;font-size:13px;line-height:1.8;\">\n<strong>AI & Machine Learning:</strong> Python, RAG, LangChain, FAISS, Hugging Face<br>\n<strong>Backend:</strong> FastAPI, Node.js, Express.js<br>\n<strong>Frontend:</strong> React, Next.js, Tailwind CSS<br>\n<strong>Databases:</strong> PostgreSQL, MySQL<br>\n<strong>Automation:</strong> n8n, Python, Docker\n</td>\n</tr>\n</table>\n\n<!-- PORTFOLIO CTA -->\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin-top:24px;\">\n<tr>\n<td align=\"center\" style=\"padding:22px 14px;background:#0b1220;border-radius:12px;\">\n<p style=\"margin:0 0 12px;font-size:18px;font-weight:700;color:#ffffff;\">\nExplore My Portfolio\n</p>\n\n<p style=\"margin:0 0 18px;font-size:13px;line-height:1.6;color:#cbd5f5;\">\nDiscover my projects, technical skills, and development journey.\n</p>\n\n<a href=\"https://myself-portfolio-deepika.vercel.app/\"\ntarget=\"_blank\"\nstyle=\"display:inline-block;background:#8b5cf6;color:#ffffff;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:700;\">\nView My Portfolio →\n</a>\n</td>\n</tr>\n</table>\n\n<!-- GITHUB & LINKEDIN -->\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin-top:18px;\">\n<tr>\n<td align=\"center\" style=\"padding:8px;\">\n<a href=\"https://github.com/deepikaboominathan\"\ntarget=\"_blank\"\nstyle=\"color:#5b21b6;font-weight:700;text-decoration:none;font-size:14px;\">\nGitHub Projects\n</a>\n&nbsp;&nbsp; | &nbsp;&nbsp;\n<a href=\"https://www.linkedin.com/in/deepika-boominathan-902a33295/\"\ntarget=\"_blank\"\nstyle=\"color:#0369a1;font-weight:700;text-decoration:none;font-size:14px;\">\nLinkedIn Profile\n</a>\n</td>\n</tr>\n</table>\n\n<p style=\"margin-top:24px;\">\nThank you for your time and consideration.<br>\nI'm open to opportunities where I can contribute my development skills, learn from experienced teams, and build impactful technology solutions.\n</p>\n\n<p style=\"margin-top:20px;\">\nBest regards,<br>\n<strong style=\"font-size:16px;color:#111827;\">Deepika Boominathan</strong><br>\n<span style=\"color:#64748b;\">AI/ML & Full-Stack Developer</span><br>\n<span style=\"color:#64748b;\">Coimbatore, Tamil Nadu, India</span>\n</p>\n\n</td>\n</tr>\n\n<!-- FOOTER -->\n<tr>\n<td bgcolor=\"#f8fafc\" style=\"padding:18px;text-align:center;\">\n<p style=\"margin:0 0 6px;font-size:12px;color:#64748b;\">\nLet's connect and build something meaningful.\n</p>\n<a href=\"https://myself-portfolio-deepika.vercel.app/\"\nstyle=\"font-size:12px;color:#6d28d9;text-decoration:none;\">\nmyself-portfolio-deepika.vercel.app\n</a>\n</td>\n</tr>\n\n</table>\n</td>\n</tr>\n</table>\n\n</body>\n</html>\n```",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        -560,
+        256
+      ],
+      "id": "26d26a8a-ba81-4a59-9e8a-79e071317c03",
+      "name": "Send email",
+      "webhookId": "d9404fca-b1ac-41b8-aeae-42395941e173",
+      "credentials": {
+        "smtp": {
+          "id": "Qj3SFU8B5wrYpTZT",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nconst emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\nconst output = [];\n\nfor (const item of items) {\n  const json = item.json ?? {};\n\n  // Try multiple possible column names\n  const rawEmail =\n    json.Email ??\n    json.email ??\n    json.E_mail ??\n    json['E-mail'] ??\n    json[0];\n\n  if (typeof rawEmail !== 'string') continue;\n\n  const email = rawEmail.trim().toLowerCase();\n\n  if (!emailRegex.test(email)) continue;\n\n  output.push({\n    json: {\n      ...json,\n      to: email,\n    },\n  });\n}\n\nreturn output;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -864,
+        256
+      ],
+      "id": "3c895bb2-801a-4177-8b7e-5ea4e39883a8",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Vo-6_vs2eKAEokPKKn9yVJwsihHuHuTKyhgrT13ScG4",
+          "mode": "list",
+          "cachedResultName": "AI-topics",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Vo-6_vs2eKAEokPKKn9yVJwsihHuHuTKyhgrT13ScG4/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Vo-6_vs2eKAEokPKKn9yVJwsihHuHuTKyhgrT13ScG4/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -1168,
+        256
+      ],
+      "id": "4eb72178-c31e-4559-afda-bc9058beadcb",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "7Hu2ofgyE56jzuBE",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Send email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "b41a4f46-0ecd-4364-afbc-99ef15778281",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "9afc0ed4221950ca1c61a8db1fe6332ccc979b719f2293d553d87ab4e3587be1"
+  },
+  "id": "7xb_9nXiOp__0SwRFro5O",
+  "tags": []
+}
